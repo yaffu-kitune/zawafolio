@@ -9,13 +9,9 @@ export default defineNuxtConfig({
   },
   modules: [
     ['nuxt-icon'],
-    [
-      "nuxt-microcms-module",
-      {
-        serviceDomain: "yaffu", // YOUR_DOMAIN is the XXXX part of XXXX.microcms.io
-        apiKey: "ZrMRlrOEiKevPM0f949LNLbCUjCOmavraDpq",
-        // target: 'server',
-      },
-    ],
+    ['@nuxt/content'],
   ],
+  content: {    
+    // https://content.nuxtjs.org/api/configuration 
+   },
 });

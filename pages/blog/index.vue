@@ -1,13 +1,3 @@
-
-<script setup lang="ts">
-import { Blog } from "~~/types/blog";
-
-const { data } = await useMicroCMSGetList<Blog>({
-    endpoint: "blogs",
-});
-console.log(data)
-</script>
-
 <template>
     <div>
         <h1>Nuxt3 Jamstack Blogs</h1>
@@ -19,22 +9,13 @@ console.log(data)
 
         <div>
             <ul class="grid grid-cols-3 gap-4 content-stretch">
-                <li v-for="blog in data?.contents" :key="blog.id">
-                    <NuxtLink class="btn btn-ghost btn-xl" :to="`/blog/${blog.id}`">
-                        <img :src="blog.eyecatch?.url" :width="500" alt="" />
-                        <div>
-                            <div>
-                                {{ blog.category?.name }}
-                            </div>
-                            <div>
-                                {{ blog.title }}
-                            </div>
-                            <div>
-                                {{ blog.publishedAt ?? blog.createdAt }}
-                            </div>
+                <div>
+                    <ContentList path="/blog" v-slot="{ list }">
+                        <div v-for="article in list" :key="article._path">
+                            <NuxtLink :to=article._path >{{ article.title }}</NuxtLink>
                         </div>
-                    </NuxtLink>
-                </li>
+                    </ContentList>
+                </div>
             </ul>
         </div>
     </div>

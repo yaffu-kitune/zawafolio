@@ -5,7 +5,7 @@
             <div class="col-start-2 col-span-4 ...">
                 <div class="grid grid-rows-3 grid-flow-col gap-4">
                     <div class="row-span-3">
-                        <div class="hover:animate-bounce">
+                        <div class="animate-pulse">
                             <img src="../src/img/kituneao.png" />
                         </div>
                     </div>
