@@ -18,9 +18,9 @@
                     <div class="row-span-2 col-span-2 ...">03</div>
                 </div>
             </div>
-            <div class="col-start-1 col-end-3 ...">02</div>
-            <div class="col-end-7 col-span-2 ...">03</div>
-            <div class="col-start-1 col-end-7 ...">04</div>
+            <div class="col-start-1 col-end-3 ">02</div>
+            <div class="col-end-7 col-span-2 ">03</div>
+            <div class="col-start-1 col-end-7 ">04</div>
         </div>
     </div>
 </template>

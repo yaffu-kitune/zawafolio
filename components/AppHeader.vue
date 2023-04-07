@@ -16,18 +16,18 @@
                     </label>
                     <ul tabindex="0"
                         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <NuxtLink to="/" class="btn btn-ghost btn-sm rounded-btn">Home</NuxtLink>
-                        <NuxtLink to="/about" class="btn btn-ghost btn-sm rounded-btn">About</NuxtLink>
+                        <NuxtLink href="/" class="btn btn-ghost btn-sm rounded-btn">Home</NuxtLink>
+                        <NuxtLink href="/about" class="btn btn-ghost btn-sm rounded-btn">About</NuxtLink>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="hidden lg:flex">
             <div class="tab gap-16">
-                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" href="/" >ホーム</NuxtLink>
-                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" href="/playground" >遊び場</NuxtLink>
-                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" href="/blog" >blog</NuxtLink>
-                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" href="/about" >about</NuxtLink>
+                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" to="/" >ホーム</NuxtLink>
+                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" to="/playground" >遊び場</NuxtLink>
+                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" to="/blog" >blog</NuxtLink>
+                <NuxtLink class="tab text-cyan-50 hover:bg-gray-600 rounded-lg" to="/about" >about</NuxtLink>
             </div>
         </div>
     </div>
