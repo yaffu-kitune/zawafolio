@@ -15,7 +15,7 @@
                             Yaffu
                         </h1>
                     </div>
-                    <div class="row-span-2 col-span-2 ...">03</div>
+                    <div class="row-span-2 col-span-2 text-2xl">「これはテストです。」</div>
                 </div>
             </div>
             <div class="col-start-1 col-end-3 ">02</div>
